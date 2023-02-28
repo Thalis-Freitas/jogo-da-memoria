@@ -29,6 +29,7 @@ body{
   border-radius: 20px;
   box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
   backface-visibility: hidden;
+  cursor: pointer;
 }
 
 .flip{
@@ -75,8 +76,48 @@ body{
 }
 
 #game-board{
-  max-width: 80%;
+  max-width: 90%;
   display: grid;
   grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 15px;
+}
+
+@media (max-width: 1000px){
+  body{
+    justify-content: center;
+    width: 100vw;
+  }
+
+  #game-board{
+    grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .card{
+    width: 13vw;
+    height: 13vw;
+  }
+}
+
+@media (max-width: 600px){
+  body{
+    align-items: start;
+    height: 100%;
+  }
+
+  #game-board{
+    margin: 10px 0;
+    max-width: 100%;
+    grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 450px){
+  #game-board{
+    grid-template: 1fr 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr;
+  }
+
+  .card{
+    width: 20vw;
+    height: 20vw;
+  }
 }
