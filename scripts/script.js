@@ -2,6 +2,7 @@ const FRONT = 'card-front'
 const BACK = 'card-back'
 const CARD = 'card'
 const ICON = 'icon'
+const FLIP = 'flip'
 
 startGame()
 
@@ -42,5 +43,18 @@ function createCardFace(face, card, element){
 }
 
 function flipCard(){
-  this.classList.add('flip')
+  if(game.setCard(this.id)){
+    this.classList.add(FLIP)
+    if (game.checkMatch()){
+      game.clearCards()
+    }else{
+      setTimeout(() => {
+        let firstCardView = document.getElementById(game.firstCard.id)
+        let secondCardView = document.getElementById(game.secondCard.id)
+        firstCardView.classList.remove(FLIP)
+        secondCardView.classList.remove(FLIP)
+        game.clearCards()
+      }, 1000)
+    }
+  }
 }
