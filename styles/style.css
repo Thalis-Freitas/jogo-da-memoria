@@ -51,7 +51,7 @@ body{
   color: #121c2b;
 }
 
-#game-over{
+#game-over, #new-game{
   position: absolute;
   width: 100%;
   height: 100%;
@@ -59,13 +59,22 @@ body{
   background-color: rgba(0, 0, 0, 0.9);
   color: #fff;
   font-size: 3em;
-  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  text-align: center;
 }
 
-#restart{
+#game-over{
+  display: none;
+}
+
+#new-game{
+  display: flex;
+}
+
+button{
   padding: 10px;
   font-size: 1.2rem;
   background-color: #ffff00;
@@ -80,6 +89,23 @@ body{
   display: grid;
   grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 15px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  background-color: rgba(2, 196, 255, 0.6);
+  width: 100%;
+  text-align: center;
+  line-height: 50px;
+}
+
+a > span {
+  font-size: 0.5em;
+  position: relative;
+  bottom: 5px;
 }
 
 @media (max-width: 1000px){
@@ -114,10 +140,15 @@ body{
 @media (max-width: 450px){
   #game-board{
     grid-template: 1fr 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr;
+    margin: 30px 0;
   }
 
   .card{
     width: 20vw;
     height: 20vw;
+  }
+  
+  a > span {
+    font-size: 0.4em;
   }
 }
