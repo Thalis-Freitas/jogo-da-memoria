@@ -135,6 +135,10 @@ a > span {
     max-width: 100%;
     grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
   }
+
+  #new-game div, #game-over div{
+    max-width: 90%;
+  }
 }
 
 @media (max-width: 450px){
@@ -150,5 +154,11 @@ a > span {
   
   a > span {
     font-size: 0.4em;
+  }
+}
+
+@media (max-width: 330px){
+  a > span {
+    font-size: 0.9rem;
   }
 }

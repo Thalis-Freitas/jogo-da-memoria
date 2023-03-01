@@ -4,10 +4,12 @@ const CARD = 'card'
 const ICON = 'icon'
 const FLIP = 'flip'
 
+document.querySelector('#game-board').style.position = 'fixed'
 startGame()
 
 document.querySelector('#start').addEventListener('click', () =>{
   document.querySelector('#new-game').style.display = 'none'
+  document.querySelector('#game-board').style.position = 'static'
 })
 
 function startGame(){
@@ -57,6 +59,7 @@ function flipCard(){
         game.clearCards()
         if (game.checkGameOver()){
           gameOverLayer.style.display = 'flex'
+          document.querySelector('#game-board').style.position = 'fixed'
         }
       }else{
         setTimeout(() => {
@@ -75,4 +78,5 @@ document.getElementById('restart').addEventListener('click', () => {
   game.clearCards()
   startGame()
   gameOverLayer.style.display = 'none'
+  document.querySelector('#game-board').style.position = 'static'
 })
