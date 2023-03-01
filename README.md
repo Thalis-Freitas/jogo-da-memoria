@@ -4,7 +4,7 @@
 
 **O Projeto é responsivo e se adapta à diversos tamanhos de tela;**
 
-**A cada rodada do jogo as cartas são embaralhadas novamente;**
+**As cartas do jogo são embaralhadas a cada rodada;**
 
 **Os temas escolhidos para as cartas do jogo foram algumas das tecnologias que venho estudando até aqui:**
 - Bootstrap
