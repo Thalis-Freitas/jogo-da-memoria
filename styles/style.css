@@ -75,13 +75,18 @@ body{
 }
 
 button{
-  padding: 10px;
+  padding: 10px 15px;
   font-size: 1.2rem;
   background-color: #ffff00;
   border: none;
   border-radius: 7px;
   margin-top: 10px;
   cursor: pointer;
+  transition: background-color 1.5s ease-in-out;
+}
+
+button:hover{ 
+  background-color: #0ef50e;
 }
 
 #game-board{
