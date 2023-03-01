@@ -22,11 +22,7 @@
   
 Link: https://thalis-freitas.github.io/jogo-da-memoria/
 
-![Vídeo de demonstração](https://github.com/Thalis-Freitas/jogo-da-memoria/blob/c88226e7470426ce2069657e3c8e82ab11d8719e/assets/demo/gif-demo.gif)
-
-![Imagem de demonstração](https://github.com/Thalis-Freitas/jogo-da-memoria/blob/c88226e7470426ce2069657e3c8e82ab11d8719e/assets/demo/demo-m.png)
-
-![Imagem de demonstração](https://github.com/Thalis-Freitas/jogo-da-memoria/blob/c88226e7470426ce2069657e3c8e82ab11d8719e/assets/demo/demo-p.png)
+![Vídeo de demonstração](https://github.com/Thalis-Freitas/jogo-da-memoria/blob/f2bc2b92c7b9dff19684e1a4b25c0bfa0d68b302/assets/demo/gif-demo.gif)
 
 ## :computer: Tecnologias utilizadas
 
